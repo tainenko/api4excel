@@ -9,6 +9,25 @@ import json
 
 logging = log.get_logger()
 
+#todo:將ApiRequest改寫成Object
+class ApiRequest:
+    def __init__(self,method,url,data,headers):
+        self.method=method
+        self.url=url
+        self.data=data
+        self.headers=headers
+        #todo:實作request的封裝
+        self.responce=''
+
+    @property
+    def content(self):
+        return _self.content
+
+    @property.setter
+    def content(self):
+
+
+
 def change_type(value):
     """
     对dict类型进行中文识别
